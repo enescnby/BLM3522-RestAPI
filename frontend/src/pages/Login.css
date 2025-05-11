@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.game-wrap {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+
+.game-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+
+.message {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.message small {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media (max-width: 600px) {
+  .game-wrap {
+    width: 90%;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
